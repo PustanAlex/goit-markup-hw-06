@@ -13,7 +13,7 @@
     <!-- Menu Bar -->
     <header class="global-header">
         <div class="menu-bar">
-            <a href="https://www.figma.com/file/TwjztGEkwMravGL9pPVt8l/Web-Studio-Homework-Project?type=design&node-id=1-293&mode=design&t=0eOfYrUTI4rjxHB8-0" target="_blank"><span class="logo"><span class="web-word">Web</span><span class="studio-word">Studio</span></a>
+            <a href="https://www.figma.com/file/TwjztGEkwMravGL9pPVt8l/Web-Studio-Homework-Project?type=design&node-id=1-293&mode=design&t=0eOfYrUTI4rjxHB8-0" target="_blank"><span class="logo"><span class="web-word">Web</span><span class="studio-word">Studio</span></span></a>
             <div class="main-navigation">
                 <nav >
                     <ul>
@@ -351,19 +351,69 @@
                 </div>
             </div>
         </div>
+        <div class="newslatter-subscribe">
+            <p>Subscribe to the newsletter</p>
+            <div class="label-for-footer">
+                <label>
+                    <input type="email" placeholder="E-mail">
+                </label>
+                <button type="submit">Subscribe
+                <svg>
+                    <use href="./images/icons.svg#icon-icon-send" />
+                </svg>
+                </button>
+            </div>
+        </div>
     </footer>
 
 
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-    
-          <button class="close-btn" data-modal-close>
+            <h2>Leave your information and we'll call you back</h2>
+            <form class="modal-form">
+                <label>
+                    <span class="form-name">Name</span>
+                    <div class="input-svg-position">
+                        <input type="text" name="name" class="modal-input">
+                        <svg>
+                            <use href="./images/icons.svg#icon-modal-name-input"/>
+                        </svg>
+                    </div>
+                </label>
+                <label>
+                    <span class="form-name">Telephone</span>
+                    <div class="input-svg-position">
+                        <input type="phone" name="telephone" class="modal-input">
+                        <svg>
+                            <use href="./images/icons.svg#icon-modal-phone-input"/>
+                        </svg>
+                    </div>
+                </label>
+                <label>
+                    <span class="form-name">E-mail</span>
+                    <div class="input-svg-position">
+                        <input type="email" name="email" class="modal-input">
+                        <svg>
+                            <use href="./images/icons.svg#icon-modal-email-input"/>
+                        </svg>
+                    </div>
+                </label>
+                <label class="feedback-label">
+                    <span class="form-name">Comments</span>
+                    <textarea placeholder="Enter the text" rows="5" name="feedback"></textarea>
+                </label>
+                <label>
+                    <div class="checkbox-label">
+                        <input class="checkbox-input" type="checkbox" name="terms">
+                        <p>I agree with the letter and accept the <span>Terms and Conditions</span></p>
+                        <svg>
+                            <use href=".//images/icons.svg#icon-checkbox"></use>
+                        </svg>
+                    </div>
+                </label>
+            </form>
+        <button class="modal-send-btn" type="submit">Send</button>
+        <button class="close-btn" data-modal-close>
             <svg>
                 <use href=".//images/icons.svg#icon-close-btn"/>
             </svg>
