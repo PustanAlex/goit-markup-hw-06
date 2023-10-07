@@ -566,6 +566,7 @@ footer p {
         border-radius: 4px;
         color: #fff;
         padding-left: 18px;
+        outline: none;
     }
 
 
@@ -676,6 +677,7 @@ footer p {
         color: #FFF;
         transition: background-color var(--transition), color var(--transition);
     }
+
 
     .button1 {
         width: 64px;
@@ -846,6 +848,7 @@ footer p {
 
       .modal-form .input-svg-position:focus-within svg{
         fill: #2196F3;
+        transition: fill var(--transition);
       }
 
 
@@ -858,6 +861,12 @@ footer p {
         border-radius: 4px;
         margin-top: 4px;
         padding-left: 42px;
+        outline: none;
+      }
+
+       .modal-content .modal-input:focus {
+        border: 1px solid #2196F3;
+        transition: border var(--transition);
       }
 
       .modal-form textarea {
@@ -868,7 +877,8 @@ footer p {
         border-radius: 4px;
         resize: none;
         margin-top: 4px;
-        padding-left: 16px
+        padding-left: 16px;
+        outline: none;
       }
 
       .modal-form .checkbox-label {
