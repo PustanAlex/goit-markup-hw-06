@@ -678,6 +678,11 @@ footer p {
         transition: background-color var(--transition), color var(--transition);
     }
 
+    .portofolio button:focus {
+        background-color: #2196F3;
+        color: #fff;
+    }
+
 
     .button1 {
         width: 64px;
